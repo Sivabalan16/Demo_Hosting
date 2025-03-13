@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Front_End/Login_Page/css/style.css">
+    <script defer src="Front_End/Login_Page/js/script.js"></script>
+</head>
+<body>
+    <div class="theme-toggle" onclick="toggleTheme()">🌙</div>
+    <div class="container">
+        <div class="login-card">
+            <h2>Login</h2>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" maxlength="10" placeholder="Mobile Number" required>
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <span class="toggle-password" onclick="togglePassword()">🙈</span>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
